@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Instagram</title>
+
+</head>
+
+<body>
+    <div class="instagram-home">
+        <div class="instagram-phone">
+            <img src="./assets/telas.png" alt="tela do instagram">
+
+        </div>
+        <div class="instagram-login">
+            <div class="instagram-login-campos">
+                <img src="./assets/instagram-logo-name.png" alt="Instagram Logo">
+                <div class="inputs label-float">
+                    <input type="text" placeholder="Telefone, nome de usuário ou email">
+                    <input type="password" id="senha" placeholder="Senha">
+                    <i class="fa fa-eye" aria-hidden="true" ></i>
+                </div>
+                <div class="login-button">
+                    <button class="login-btn">Entrar</button>
+                </div>
+                <div class="acesso-facebook">
+                    <span>OU</span>
+                    <a href="" class="facebook">Entrar com o Facebook</a>
+                    <a href="" class="senha">Esqueceu a senha?</a>
+                </div>
+
+            </div>
+            <div class="cadastre-se">
+                <p>Não tem uma conta? <a href="">Cadastre-se</a></p>
+            </div>
+            <div class="obter-app">
+                <span>Obtenha o aplicativo.</span>
+                <div class="apps">
+                    <a href="" class="app-download"><img src="./assets/google.png" alt="google play"></a>
+                    <a href="" class="app-download"><img src="./assets/microsoft.png" alt="microsoft"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script>
+    let btn = document.querySelector('.fa-eye')
+
+    btn.addEventListener('click', () => {
+        let inputSenha = document.getElementById('senha')
+
+        if (inputSenha.getAttribute('type') == 'password') {
+            inputSenha.setAttribute('type', 'text')
+        } else {
+            inputSenha.setAttribute('type', 'password')
+        }
+    })
+  
+</script>
+
+</html>
