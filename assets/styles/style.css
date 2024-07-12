@@ -6,7 +6,7 @@
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
     text-decoration: none;
-    color: #fff;
+    color: #494949;
 }
 
 body{
@@ -37,11 +37,11 @@ body{
     padding: 1rem;
     width: 25rem;
     background: rgba(255, 255, 255, 0.175);
-    border-radius: 15px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.4);
 }
 
 .instagram-login-campos{
@@ -50,8 +50,9 @@ body{
     width: 100%;
     margin-bottom:10px;
     padding: 10px 0;
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.4);
     border-radius: 15px;  
+    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.1);
 }
 .instagram-login-campos img{
     height: 3.75rem;
@@ -71,13 +72,13 @@ body{
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.06);
     border-radius: 8px;
 }
 
 .inputs > input::placeholder{
-    color: rgba(255, 255, 255, 0.6);
+    color: rgba(129, 129, 129, 0.6);
 }
 
 .login-button {
@@ -85,15 +86,28 @@ body{
     padding: .625rem 2.5rem;
     width: 100%;    
 }
-
+         
 .login-button button {
-    background: #0094f6;
+    background-image: linear-gradient(to right, #1FA2FF 0%, #12D8FA  51%, #1FA2FF  100%);
+    transition: 0.5s;
+    background-size: 200% auto;      
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+  }
+
+  .login-button button:hover {
+    background-position: right center; 
+  }
+ 
+.login-button button {
     width: 100%;
     border-radius: 8px;
     font-size: 14px;
     font-weight: 600;
     border: none;
     padding: 8px 0;
+    color: #fff;
 }
 
 .acesso-facebook{
@@ -122,8 +136,9 @@ body{
     width: 100%;
     margin-bottom: 10px;
     padding: 10px 0px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.4);
     border-radius: 15px;  
+    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.1);
 }
 
 .cadastre-se p {
@@ -131,8 +146,9 @@ body{
     font-size: 14px;
     text-align: center;
 }
+
 .cadastre-se a{
-    color: #00eaff;
+    color: #1a72ff;
     font-weight: bold;
 }
 
@@ -154,10 +170,15 @@ body{
     border: none;
 }
 
+.obter-app > span, .acesso-facebook>span{
+    color: #f9f9f9e0;
+}
+
 .bi-eye, .bi-eye-slash{
     cursor: pointer;
     font-weight: 200;
     font-style: normal;
+    font-size: .8rem;
 }
 
 @media screen and (max-width: 450px) {   
