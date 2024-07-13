@@ -182,15 +182,10 @@ body{
 }
 
 @media screen and (max-width: 450px) {   
-    .instagram-login *{
-        border: none;
-        margin: 0 auto;
-    }
-
     .instagram-home{
         width:90%;
     } 
-  }
+}
 
 @media screen and (max-width: 319px) {
     .obter-app .apps{
@@ -203,4 +198,4 @@ body{
         padding: .625rem;
         margin-top: .625rem;
     }
-  }
+}
